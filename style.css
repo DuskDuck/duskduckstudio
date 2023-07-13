@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+}
+
+
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;  
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.scroller section {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.first-game {
+    background-color: aqua;
+}
+.second-game {
+    background-color: blueviolet;
+}
+.third-game {
+    background-color: yellowgreen;
+}
+.fourth-game {
+    background-color: brown;
+}

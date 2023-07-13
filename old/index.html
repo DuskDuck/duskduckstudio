@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuskDuck Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="images/DuskDuckLogo.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!--Front screen(hero)-->
+    <a id="hero"></a>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">DUSK<span>D</span>UCK</h2>
+            <ul id="menulist">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Get in Touch</a></li>
+            </ul>
+            <div class="social">
+                <a href="https://www.instagram.com/duskduckstudio"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCACX8EtZVShh1rKtVGBo5Pw"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/cNguynN11872614"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" onclick="togglemenu()"></i>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="verline">
+                <svg height="110" width="10">
+                    <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(255, 255, 255);stroke-width:20"/>
+                </svg>
+            </div>
+            <div class="contenttext">
+                <p class="contentheader">DUSKDUCK STUDIO</p>
+                <p class="contentsub">Making games all by myself. From modeling, sound designing to coding.</p>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="slidesection">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/Development_Blue.png" style="width:100%">
+            <div class="text">Screenshot #1</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/Update_Blue.png" style="width:100%">
+            <div class="text">Screenshot #2</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Feedback.png" style="width:100%">
+            <div class="text">Screenshot #3</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    </div>
+    -->
+    <!--Project List-->
+    <a id="project"></a>
+    <section class="project">
+        <div class="main">
+            <div class="projecttext">
+                <p class="projectheader">Projects</p>
+                <p class="projectdesc">All of my games project since 2019. From Java, C# to now C++ with UE4</p>
+            </div>
+        </div>
+        <div class="gamelist">
+            <a href="#"><img class="gamelistitem" src="images/DuckboyAdventure_Thumbnail.png" alt="Polywar"></a>
+            <a href="#"><img class="gamelistitem" src="images/Thumbnail_Rectangle.png" alt="Polywar"></a>
+            <a href="#"><img class="gamelistitem" src="images/Contagion_Rectangle.png" alt="Polywar"></a>
+        </div>
+        <div class="projectbutton">
+            <a class="button" href="#">MORE GAMES</a>
+        </div>
+        <div class="spacer"></div>
+        <svg height="10" width=100%>
+            <line x1=15% y1="0" x2="85%" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:4"/>
+        </svg>
+    </section>
+
+    <!--News Section-->
+    <a id="news"></a>
+    <section class="news">
+        <div class="newsheader">
+            <p class="projectheader">Lastest News</p>
+        </div>
+        <div class="newbox row1">
+            <a class="newbutton" href="#">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Contagion_BG.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">BattlePoly Contagion</p>
+                        <p class="date">Oct / 16 / 2022</p>
+                        <p class="newtitle">Contagion Announcement!</p>
+                        <p class="newcontent" >New Gamemode is in production.More detail here.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="newbutton" href="#">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Battlepoly0.0.3.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">BattlePoly</p>
+                        <p class="date">Aug / 4 / 2022</p>
+                        <p class="newtitle">BattlePoly Patch Note #3 (Version 0.0.3)</p>
+                        <p class="newcontent" >What's news on the latest patch.Check out here.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="newbutton" href="https://duskduck.itch.io/battlepoly/devlog/361927/battlepoly-updated-prototype-02" target="_blank">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Development_BG.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">BattlePoly</p>
+                        <p class="date">May / 12 / 2022</p>
+                        <p class="newtitle">Developement Log #2</p>
+                        <p class="newcontent">Sharing my developing journey here.Check out here.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="newbox row2">
+            <a class="newbutton" href="#">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Feedback_BG.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">Duskduck studio</p>
+                        <p class="date">May / 12 / 2022</p>
+                        <p class="newtitle">Studio Feedback/Q&A</p>
+                        <p class="newcontent">Answering to your feedback.Changes to improve.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="newbutton" href="#">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Battlepoly0.0.3.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">BattlePoly</p>
+                        <p class="date">Mar / 26 / 2022</p>
+                        <p class="newtitle">BattlePoly Patch Note #2/Hot Fix (Version 0.0.2)</p>
+                        <p class="newcontent" >What's news on the latest patch.Check out here.</p>
+                    </div>
+                </div>
+            </a>
+            <a class="newbutton" href="https://duskduck.itch.io/battlepoly/devlog/361001/battlepoly-first-prototype" target="_blank">
+                <div class="newcard">
+                    <img class="newphoto" src="images/Development_BG.png" alt="Conquest">
+                    <div class="newstext">
+                        <p class="newstopic">BattlePoly</p>
+                        <p class="date">Mar / 23 / 2022</p>
+                        <p class="newtitle">Developement Log #1</p>
+                        <p class="newcontent">Sharing my developing journey here.Check out here.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!--Video Showcase Section-->
+    <section class="showcase">
+        <div class="showcaseheader">
+            <p>SHOWCASE VIDEO</p>
+        </div>
+        <svg height="10" width=100%>
+            <line x1=10% y1="0" x2="90%" y2="0" style="stroke:rgba(255, 255, 255, 0.201);stroke-width:2"/>
+        </svg>
+        <div class="showcasecontent">
+            <div class="iframe-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t6f6ky7c8T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="showcasetext">
+                <p>Check out my feature showcase videos! Be sure to follow me on social media to find out about my game latest news.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section class="contact">
+        <div class="contactcontent">
+            <img class="studiologocard" src="images/Dusklogo_S.png" alt="Dusklogo">
+            <div class="contacttext">
+                <p class="contactdisc">DUSKDUCK STUDIO is an independent games studio. The studio consist of me only. I am working on a big project to make a low-poly FPS game which will be the first title of the studio "BattlePoly"</p>
+                <p style="font-weight:700;">CONTACT</p>
+                <p>E-mail: <a class="decorlink" href="#">duskduckstudio@gmail.com</a></p>
+                <p>Twitter: <a class="decorlink" href="#">@duskduckstudio</a></p>
+                <p>Facebook: <a class="decorlink" href="#">@duskduckstudio</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footerheader">
+            <div class="fcontent">
+                <div class="footercontent">
+                    <p class="join">Follow me on</p>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/duskduckstudio"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCACX8EtZVShh1rKtVGBo5Pw"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://twitter.com/cNguynN11872614"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <svg height="10" width=100%>
+                        <line x1=0% y1="0" x2="90%" y2="0" style="stroke:rgba(255, 255, 255, 0.3);stroke-width:2"/>
+                    </svg>
+                    <div class="footerbutton">
+                        <a href="#hero">Home</a>
+                        <a href="#project">Projects</a>
+                        <a href="#gamemode">News</a>
+                        <a href="#mail">Contact</a>                     
+                    </div>
+                </div>
+            </div>
+            <div class="totop">
+                <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+                <a href="#"><p>Back to Top</p></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2022 Duskduckstudio - All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var menulist = document.getElementById("menulist");
+        function togglemenu(){
+            if(menulist.style.maxHeight=="130px"){
+                menulist.style.maxHeight="0px";
+            }
+            else{
+                menulist.style.maxHeight="130px";
+            }
+        }
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
