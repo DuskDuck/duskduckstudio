@@ -1,8 +1,8 @@
 
 body {
     margin: 0;
+    background-color: black;
 }
-
 
 .scroller {
     height: 100vh;
@@ -18,16 +18,69 @@ body {
     height: 100vh;
     scroll-snap-align: start;
 }
-
+.intro {
+    background-color: rgb(100, 0, 28);
+    background-image: url("images/blue.jpg");
+}
 .first-game {
     background-color: aqua;
+    background-image: url("images/BG.png");
 }
 .second-game {
     background-color: blueviolet;
+    background-image: url("paper.gif");
 }
 .third-game {
     background-color: yellowgreen;
+    background-image: url("paper.gif");
 }
 .fourth-game {
     background-color: brown;
+    background-image: url("paper.gif");
 }
+
+section {
+    position: relative;
+}
+
+.content {
+    opacity: 0;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content button {
+    border-radius: 4px;
+    width: 288px;
+    height: 64px;
+    border: 0;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 750ms ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
