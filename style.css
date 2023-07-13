@@ -4,6 +4,79 @@ body {
     background-color: black;
 }
 
+.header {
+    position: fixed;
+    z-index: 99;
+    padding-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    display: flex;
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 2px;
+    background: linear-gradient(180deg, rgba(5,5,5,0.3) 0%, rgba(0,0,0,0) 100%);
+
+}
+.header a {
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    margin-left: 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        background-color: #fff;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 10;
+    }
+}
+
+.header a:hover {
+    font-size: 26px;
+    font-weight: 700;
+
+    &:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+.header img {
+    width: 60px;
+}
+.header-button {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.social {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin-left: 45%;
+}
+.social a {
+    width: 50px;
+}
+
+.social a:hover {
+    font-size: 30px;
+}
+
+
+
+
 .scroller {
     height: 100vh;
     overflow-y: scroll;
@@ -75,7 +148,7 @@ section {
     filter: drop-shadow(0px 4px 4px #000000a2);
     z-index: 11;
 }
-.content button {
+.ultimate-button button {
     border-radius: 8px;
     width: 232px;
     height: 64px;
@@ -99,17 +172,16 @@ section {
         position: absolute;
         top: -50px;
         transform: rotate(35deg);
-        transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
         width: 50px;
         z-index: 10;
     }
 }
 
-.content button:hover {
-  
+.ultimate-button button:hover {
   &:after {
     left: 120%;
-    transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 
@@ -123,7 +195,7 @@ section {
     background-image: url('path/to/background-image.jpg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    z-index: 0;
 }
 
 .fade-in {

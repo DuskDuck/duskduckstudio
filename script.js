@@ -8,7 +8,8 @@ window.addEventListener('DOMContentLoaded', function() {
     
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
-        console.log(rect.bottom);
+        console.log("rect bottom:" + rect.bottom);
+        console.log("innerh:" + window.innerHeight);
         return (
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
         );
