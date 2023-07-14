@@ -12,21 +12,28 @@ body {
     padding-right: 2%;
     width: 100%;
     display: flex;
-    font-family: 'Teko', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 3px;
     background: linear-gradient(180deg, rgba(5,5,5,0.3) 0%, rgba(0,0,0,0) 100%);
-
 }
+
 .header a {
-    width: 100px;
-    color: white;
+    width: 130px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     margin-left: 5%;
     text-align: center;
     position: relative;
     overflow: hidden;
+    outline: none;
+    border-radius: 12px;
+    outline-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:after {
         background-color: #fff;
@@ -37,23 +44,29 @@ body {
         position: absolute;
         top: -50px;
         transform: rotate(35deg);
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
         width: 50px;
         z-index: 10;
     }
 }
 
 .header a:hover {
-    font-size: 26px;
     font-weight: 700;
+    outline: solid;
+    outline-width: 2px;
 
     &:after {
         left: 120%;
-        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
     }
 }
 .header img {
     width: 60px;
+    transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.header img:hover{
+    transform: rotate(90deg); 
+    transition: all 1100ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .header-button {
     width: 40%;
@@ -62,20 +75,17 @@ body {
 }
 .social {
     display: flex;
+    justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 24px;
     margin-left: 45%;
 }
 .social a {
     width: 50px;
 }
-
-.social a:hover {
-    font-size: 30px;
+.social i {
+    width: 28px;
 }
-
-
-
 
 .scroller {
     height: 100vh;
@@ -126,19 +136,22 @@ section {
     justify-content: center;
     align-items: center;
 }
+
 .content img {
     max-height: 128px;
 }
+
 .content a {
     width: 20%;
     color: white;
-
 }
+
 .ultimate-button {
     position: relative;
     display: flex;
     align-items: center;
 }
+
 .ultimate-button img {
     position: absolute;
     height: 54px;
@@ -148,6 +161,7 @@ section {
     filter: drop-shadow(0px 4px 4px #000000a2);
     z-index: 11;
 }
+
 .ultimate-button button {
     border-radius: 8px;
     width: 232px;
@@ -184,7 +198,6 @@ section {
     transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
-
 
 .background {
     position: absolute;
