@@ -103,12 +103,39 @@ body {
 }
 .intro {
     background-color: black;
-    background-image: url("images/Battlefield-2042@2000x1270.jpg");
+    background-image: url("images/forrest.jpg");
     background-size: cover;
+}
+.intro h1 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+    max-height: 85px;
+}
+
+.intro h2 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+}
+
+.intro h3 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    width: 385px;
+    text-align: center;
 }
 .first-game {
     background-color: aqua;
-    background-image: url("images/BG.png");
+    background-image: url("images/polyfield.png");
+    background-size: cover;
 }
 .second-game {
     background-color: blueviolet;
@@ -225,3 +252,34 @@ section {
     }
 }
 
+.arrow
+{
+  position: relative;
+  bottom: 80px;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+
+  /**
+   * Dark Arrow Down
+   */
+  background-image: url(icon/arrow-down-sign-to-navigate.png);
+  background-size: contain;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
