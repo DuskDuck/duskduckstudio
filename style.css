@@ -139,15 +139,18 @@ body {
 }
 .second-game {
     background-color: blueviolet;
-    background-image: url("images/BG.png");
+    background-image: url("images/Contagion.png");
+    background-size: cover;
 }
 .third-game {
     background-color: yellowgreen;
     background-image: url("paper.gif");
+    background-size: cover;
 }
 .fourth-game {
     background-color: brown;
     background-image: url("paper.gif");
+    background-size: cover;
 }
 
 section {
@@ -179,8 +182,7 @@ section {
     font-weight: 400;
     font-size: 16px;
     margin-top: 20px;
-    margin-bottom: 40px;
-    width: 385px;
+    width: 485px;
     text-align: center;
 }
 
@@ -193,7 +195,21 @@ section {
     text-align: left;
 }
 
+.first-game .ultimate-button {
+    margin-top: 40px;
+}
 
+.second-game .content {
+    padding-right: 40%;
+}
+
+.second-game .content img {
+    max-height: 250px;
+}
+
+.second-game .ultimate-button {
+    margin-top: 40px;
+}
 .ultimate-button {
     position: relative;
     display: flex;
