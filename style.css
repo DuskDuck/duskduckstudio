@@ -134,12 +134,12 @@ body {
 }
 .first-game {
     background-color: aqua;
-    background-image: url("images/polyfield.png");
+    background-image: url("images/ExplodingForest.png");
     background-size: cover;
 }
 .second-game {
     background-color: blueviolet;
-    background-image: url("paper.gif");
+    background-image: url("images/BG.png");
 }
 .third-game {
     background-color: yellowgreen;
@@ -165,13 +165,34 @@ section {
 }
 
 .content img {
-    max-height: 128px;
+    max-height: 100px;
 }
 
 .content a {
     width: 20%;
     color: white;
 }
+
+.description {
+    color:white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 385px;
+    text-align: center;
+}
+
+.first-game .content {
+    margin-left: 10%;
+    align-items: start;
+}
+
+.first-game .description {
+    text-align: left;
+}
+
 
 .ultimate-button {
     position: relative;
@@ -261,9 +282,6 @@ section {
   width: 40px;
   height: 40px;
 
-  /**
-   * Dark Arrow Down
-   */
   background-image: url(icon/arrow-down-sign-to-navigate.png);
   background-size: contain;
 }
