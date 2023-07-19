@@ -181,22 +181,22 @@ body {
     text-align: center;
 }
 .first-game {
-    background-color: aqua;
+    background-color: rgb(34, 34, 34);
     background-image: url("images/ExplodingForest.png");
     background-size: cover;
 }
 .second-game {
-    background-color: blueviolet;
+    background-color: rgb(34, 34, 34);
     background-image: url("images/Contagion.png");
     background-size: cover;
 }
 .third-game {
-    background-color: yellowgreen;
+    background-color: rgb(34, 34, 34);
     background-image: url("paper.gif");
     background-size: cover;
 }
-.fourth-game {
-    background-color: brown;
+.about {
+    background-color: rgb(34, 34, 34);
     background-image: url("images/Sword-field.png");
     background-size: cover;
 }
@@ -258,8 +258,28 @@ section {
 .second-game .ultimate-button {
     margin-top: 40px;
 }
+.third-game h1 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+    max-height: 85px;
+}
 
-.fourth-game h1 {
+.third-game h2 {
+    color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 20;
+    max-height: 85px;
+}
+
+.third-game .ultimate-button {
+    margin-top: 40px;
+}
+.about h1 {
     color: white;
     font-family: 'Teko', sans-serif;
     font-weight: 700;
